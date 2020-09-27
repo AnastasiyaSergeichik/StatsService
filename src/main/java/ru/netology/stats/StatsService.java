@@ -16,24 +16,24 @@ public class StatsService {
 
     public long monthSalesWereBelowAverage(long[] sales) {
         long average = averageSalesSum(sales);
-        long BelowAverage = 0;
+        long belowAverage = 0;
         for (long sale : sales) {
             if (sale < average) {
-                BelowAverage++;
+                belowAverage++;
             }
         }
-        return BelowAverage;
+        return belowAverage;
     }
 
     public long monthSalesWereAboveAverage(long[] sales) {
         long average = averageSalesSum(sales);
-        long AboveAverage = 0;
+        long aboveAverage = 0;
         for (long sale : sales) {
             if (sale > average) {
-                AboveAverage++;
+                aboveAverage++;
             }
         }
-        return AboveAverage;
+        return aboveAverage;
     }
 
     public long monthPeakSales(long[] sales) {
